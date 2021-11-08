@@ -20,7 +20,7 @@ img{
 }
 .container{
     width: 80%;
-    max-width: 1100px;
+    max-width: 1200px;
     position: relative;
     margin: 0 auto;
     padding: 1px;
@@ -180,6 +180,7 @@ img{
 }
 
 .section1-paragraph{
+    font-size: 0.8em;
     text-align: center;
     color: white;
     margin-bottom: 3em
@@ -202,10 +203,11 @@ img{
 .section2-boxes{
     background-color: #3B4050;
     color: white;
-    padding: 1.5em;
+    padding: 1.6em;
     /* width: 80%; */
     text-align: center;
     margin: 2em auto;
+    font-size: 0.8em;
 }
 
 
@@ -234,7 +236,7 @@ footer{
 
 .footmenu-minimenus h6{
     color: #A59678;
-    text-align: center;
+    text-align: start;
     width: 100%;
 
    
@@ -245,3 +247,147 @@ footer{
     text-align: start;
     font-size: 0.7rem;
 }
+
+@media (min-width: 800px) {
+
+    .nav {
+        padding: 0;
+        margin: 0;
+        visibility: visible;
+        display: flex;
+        height: auto;
+        position: relative;
+        width: 100%;
+        /* border: 3px solid green; */
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em;
+    }
+        
+
+    .nav-toggle{
+        display: none;
+    }
+
+    .logo{
+        margin-right: 0 auto;
+        padding: 1em;
+        /* border: 3px solid red; */
+    }
+
+    .container{
+        display: flex;
+        /* border: 3px solid orange; */
+        width: 90%;
+        justify-content: space-between;
+     
+    
+    }
+
+
+    .nav__list{
+        /* border: 3px solid cyan; */
+        margin: 0;
+        margin-top: 7px;
+    }
+    .nav__list--primary{
+        margin-left: 0 auto;
+        display: inline-block;
+    }
+
+    .nav__list--secondary{
+        margin-right: 0 auto ;
+    }
+
+    .nav__item{
+        display: inline-block;
+        align-items: center;
+    }
+
+    .nav__item + .nav__item{
+        margin-left: 0.5em;
+}
+    .hero{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+    }
+
+    .hero-maintext,
+    .paragraph{
+        /* border: 3px solid orangered; */
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .hero-maintext{
+        padding: 1em;
+        order: 1;
+    }
+
+    .paragraph{
+        margin: 0;
+       
+            
+    }
+    .hero-paragraph{
+        margin-bottom: 3em;
+      
+    }
+
+    .hero-btn{
+        margin: 0;
+    }
+
+    .section1-paragraph{
+        /* border: 3px solid rgb(114, 250, 159); */
+        padding: 1em;
+    }
+
+    .section1 .container{
+        align-items: flex-start;
+    }
+
+    .section2boxstack{
+        display: block;
+        align-items: flex-start;
+    }
+
+   
+
+    .section2-paragraph{
+       padding: 2em;
+       /* border: 3px solid greenyellow; */
+    }
+    
+    .section2 h1{
+        margin: 0;
+    }
+
+    footer .container{
+        display: block;
+        padding: 3em;
+    }
+
+  
+    .footwrap{
+        display: flex;
+        /* border: 3px solid rgb(228, 228, 32); */
+   
+    }
+
+    .footmenu-minimenus h6{
+        /* color: #A59678; */
+        font-size: 0.7em;
+    }
+        
+    .footmenu-minimenus ul{
+        margin-left: 2em;
+
+    }
+
+
+    .footmenu-paragraph{
+        margin-right: 3em;
+    }
